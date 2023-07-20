@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * print_alphabet - print all alphabet in lowercase
+ * _isupper - checks for lowercase characters
+ * @c: The characters to be checked
+ * Return: 1 for uppercase character or 0 for anything else
  */
 
-void print_alphabet(void)
-int _putchar(ch)
+int _isupper(int c)
+
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
-
-	_putchar('\n');
+	if (c >= 65 && c <=90)
+	{
+		return (1);
+	}
+	return (0);
 }
